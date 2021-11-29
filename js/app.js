@@ -1,3 +1,4 @@
+import API from "./api.js";
 // Importar todos las variables de un archivo y guardarlas en un alias para acceder esta por medio de la sintáxis de punto
 import * as UI from "./interfaz.js";
 
@@ -21,4 +22,5 @@ function buscarCancion(e) {
     return;
   }
   // Consultar canción con la API
+  const busqueda = new API(artista, cancion);
 }
